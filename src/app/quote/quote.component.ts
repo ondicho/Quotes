@@ -13,7 +13,11 @@ export class QuoteComponent implements OnInit {
     new Quote(2,"If the madness of a nation disturbs a solitary mind it is not enough to say that he his mad","Chinua Achebe"),
 
   ];
+  addNewQuote(quote){
+    quote.id=quote+1;
+    this,quote.push(quote)
 
+  }
   constructor() { }
 
   ngOnInit(): void {

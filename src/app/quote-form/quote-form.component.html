@@ -1,10 +1,9 @@
-<p>quote-form works!</p>
 <div class="container-fluid">
   <h2>New Quote</h2>
   <hr>
   <div class="row">
     <div class="col-md-6">
-      <form>
+      <form (ngSubmit)='submitQuote()'>
         <div class="form-group">
           <label for="quote">Quote  : </label>
           <input type="text"class="form-control" id="quote" required>
