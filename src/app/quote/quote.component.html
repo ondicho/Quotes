@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <h1>Quotes</h1>
+  <hr>
+    <p>quote works!</p>
+    <app-quote-form></app-quote-form>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor='let quote of quote;'>
+        <ul>
+          <li>{{quote.quote}} by {{quote.author}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
