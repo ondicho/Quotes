@@ -2,8 +2,10 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-md-12">
-<button type="submit" class="btn btn-success">Up Vote</button>
-<button type="submit" class="btn btn-danger">Down Vote</button>
+  {{numberofLikes}}
+  <button  class="btn btn-success" (click)="likeButtonClick()">Up Vote</button>
+  {{numberofDislikes}}
+  <button  class="btn btn-danger" (click)="dislikeButtonClick()">Down Vote</button>
 </div>
 </div>
 </div>
