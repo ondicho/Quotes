@@ -9,8 +9,8 @@ import{Quote} from '../quote';
 export class QuoteComponent implements OnInit {
 
   quote:Quote[]=[
-    new Quote(1,"you are his choice in a political marriage","Hubert Humphrey"),
-    new Quote(2,"If the madness of a nation disturbs a solitary mind it is not enough to say that he his mad","Chinua Achebe"),
+    new Quote(1,"you are his choice in a political marriage","Hubert Humphrey","sensei"),
+    new Quote(2,"If the madness of a nation disturbs a solitary mind it is not enough to say that he his mad","Chinua Achebe","sensei"),
 
   ];
   addNewQuote(quote){

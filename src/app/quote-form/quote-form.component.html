@@ -14,6 +14,11 @@
           <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #name='ngModel' required>
         </div>
 
+        <div class="form-group">
+          <label for="submitted">Submitted by  : </label>
+          <input type="text" class="form-control" id="submitted" [(ngModel)]="newQuote.submitted" name="submitted" #name='ngModel' required>
+        </div>
+
         <button type="submit" class="btn btn-primary">Add Quote</button>
       </form>
     </div>

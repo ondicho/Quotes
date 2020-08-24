@@ -8,8 +8,7 @@
     <div class="col-md-12">
       <div *ngFor='let quote of quote;let i=index'>
         <ul>
-          <li id="{{i}}">{{quote.quote}} by {{quote.author}}<button  class="btn btn-danger" id="delete">Delete</button><app-quote-vote></app-quote-vote></li>
-
+          <li id="{{i}}">{{quote.quote}} by {{quote.author}}<app-qoute-details></app-qoute-details></li>
         </ul>
       </div>
 
