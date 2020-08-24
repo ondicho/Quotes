@@ -2,14 +2,17 @@
   <h1>Quotes</h1>
   <hr>
     <p>quote works!</p>
-    <app-quote-form></app-quote-form>
+    <app-quote-form (quoteEvent)="addNewQuote($event)"></app-quote-form>
 
   <div class="row">
     <div class="col-md-12">
-      <div *ngFor='let quote of quote;'>
+      <div *ngFor='let quote of quote;let i=index'>
         <ul>
-          <li>{{quote.quote}} by {{quote.author}}<button  class="btn btn-danger" id="delete">Delete</button><app-quote-vote></app-quote-vote></li>
+          <li id="{{i}}">{{quote.quote}} by {{quote.author}}<button  class="btn btn-danger" id="delete">Delete</button><app-quote-vote></app-quote-vote></li>
+
         </ul>
+      </div>
+
       </div>
     </div>
   </div>
