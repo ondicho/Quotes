@@ -13,6 +13,9 @@ export class QuoteComponent implements OnInit {
     new Quote(2,"If the madness of a nation disturbs a solitary mind it is not enough to say that he his mad","Chinua Achebe","sensei"),
 
   ];
+  toggleDetails(index){
+    this.quote[index].showDescription=!this.quote[index].showDescription;
+  }
   addNewQuote(quote){
     let quoteLength=this.quote.length;
     quote.id=quoteLength+1;
