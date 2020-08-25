@@ -1,8 +1,7 @@
 <div class="container-fluid">
   <h1>Quotes</h1>
   <hr>
-    <p>quote works!</p>
-    <app-quote-form (quoteEvent)="addNewQuote($event)"></app-quote-form>
+    <app-quote-form (newQuoteEvent)="addNewQuote($event)"></app-quote-form>
 
   <div class="row">
     <div class="col-md-12">
@@ -14,7 +13,6 @@
           <div *ngIf='quote.showDescription'>
             <app-qoute-details [quote]='quote'></app-qoute-details>
           </div>
-
       </div>
 
       </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import{Quote} from '../quote';
 
 @Component({
@@ -16,10 +16,9 @@ export class QuoteComponent implements OnInit {
   toggleDetails(index){
     this.quote[index].showDescription=!this.quote[index].showDescription;
   }
+
   addNewQuote(quote){
-    let quoteLength=this.quote.length;
-    quote.id=quoteLength+1;
-    this.quote.push(quote)
+    this.quote.push(quote);
 
   }
 
